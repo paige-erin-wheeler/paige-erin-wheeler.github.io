@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<!--
+	Miniport by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Miniport by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Nav -->
+		<nav id="nav">
+			<ul class="container">
+				<li><a href="./index.html">Home</a></li>
+				<li>
+					<div class="dropdown">
+						<a class="dropbtn" href="#portfolio"> Recent Work
+							<i class="fa fa-caret-down"></i>
+						</a>
+						<div class = "dropdown-content"> 
+							<a href="./teaching.html">Instruction</a>
+							<a href="./enenlhet.html">Enenlhet vowel research</a>
+							<a href="./gsa.html">Leadership and service</a>
+							<a href="./angaite.html">Angaité language description </a>
+							<a href="./highered.html">Higher education projects</a>
+							<a href="./editing.html">Professional writing and copy-editing</a>	
+						</div>
+					</div>
+				</li>
+				<li><a href="./index.html#contact">Get in touch </a></li>
+			</ul>
+		</nav>
+
+		<!-- Enenlhet -->
+			<article id="enenlhet" class="wrapper style5">
+				<div class="sidebar">
+					<a href="./files/IntervalDuration_Enenlhet.praat">Vowel duration (Praat script)</a>
+					<a href="./files/IntervalFormants_HNR_Enenlhet.praat">HNR and formants (Praat script)</a>
+					<a href="./files/Zero crossing script_mod.praat">Move Textgrid intervals to zero crossings (Praat script)</a>
+					<a href="./files/Wheeler_Vowel duration in Enenlhet_ICPhS 2023.pdf">Vowel duration in Enenlhet (ICPhS paper)</a>
+					<a href="./files/enxet_cognates_script.py">Parse through .txt file for specific characters (Python script)</a>
+				</div>
+
+				<div class="content">
+					<header>
+						<h2>Enenlhet vowel research</h2>
+						<p>This project includes three phonetic studies of the acoustics of Enenlhet vowels. Analysis is ongoing.</p>
+					</header>
+
+					<p>
+						This project uses the <a href="https://www.ailla.utexas.org/es/islandora/object/ailla%3A266557">Enenlhet language documentation corpus</a> to perform a series of corpus studies investigating the acoustics of Enenlhet <a href="https://glottolog.org/resource/languoid/id/toba1268">[tmf]</a> vowels. 
+						The corpus includes about 3.5 hours of naturalistic speech (narratives and interviews), recorded, transcribed in Enenlhet and translated to Spanish by Raina Heaton and Manolo Romero. 
+						These data were force-aligned using <a href="http://latlcui.unige.ch/phonetique/easyalign.php">EasyAlign</a>, a <a href="https://www.fon.hum.uva.nl/praat/">Praat</a> plugin. 
+						The alignment was untrained, as there is no trained acoustic model of Enenlhet; the alignment used the Spanish with <i>seseo</i> model. 
+						Alignment was hand corrected to accurately represent segment boundaries. 
+						A discussion of the accuracy and utility of this untrained forced alignment methodology will be presented at <a href="https://ailla.utexas.org/node/235">CILLA X</a> at UT Austin in November 2023.
+					</p>
+					
+					<p>
+						The first of the three studies examines vowel duration using a Linear Mixed Effects model run in R. The model examines the effect of a vowel's position within a word, the word's position with respect to a pause, the voicing of the following consonant, and syllable structure. 
+						It also accounts for random variation due to speaker and lexical item. 
+						The results of this analysis show that vowels are longer immediately before a pause, as well as in open syllables and before voiced consonants, with some interactions between these variables. 
+						The analysis does not find evidence of a fixed stress position or of phonemic vowel length, although sister languages (e.g., Enxet) have been described to contrast long and short vowels. 
+						This research will be presented as a poster at <a href="https://www.icphs2023.org">ICPhS</a> in August, 2023. 
+					</p>
+
+					<div class="scroll-container">
+						<img src="./images/syllableViolin.png" alt="violin plot showing the duration difference in ms between open and closed syllables, divided by utterance position. " width= "300"> 
+					<img src="./images/glides_correction.png" alt="Spectrogram, waveform, and textgrid showing forced alignment of an utterance" width= "300"> 
+					 <img src="./images/UF lengthening.png" alt="Violin plot showing utterance final vs utterance medial vowel duration in ms" width="300"> 
+					  <img src="./images/Mean_By_Speaker_20230523.png" alt="scatter plot showing the mean formant values at vowel midpoint in the corpus with all speakers on the same plot" width= "300"> 
+
+					</div>
+					<p>
+						The second study of Enenlhet vowels examines vowel quality, as the language has a cross-linguistically unusual vowel inventory of just three vowels: /a, e, o/. 
+						A Linear Mixed Effects analysis run in R will examine the effect of preceding and following consonant place of articulation, as well as syllable structure and vowel duration. 
+						Preliminary results suggest three vowel categories, with more variation in the F2 dimension than the F1 dimension.
+						There is a high degree of variability overall.  
+					</p>
+
+					<p>
+						The third study in this project is planned to investigate voice quality in Enenlhet vowels. 
+						In particular, I am interested in whether different types of voice quality appear in the corpus, and, if so, whether different types of voice quality map onto different phenomena. 
+						For example, does a phonemic glottal stop, or a phrase boundary, consistently appear with a particular type of voicing? 
+						Qualitatively, I have observed substantial variation in voice quality in the corpus, but no acoustic analysis of voice quality exists in Enenlhet. 
+					</p>
+					
+					<p>
+						During the course of this research project, I have recruited and trained two undergraduate research assistants, Katie McGhee and Emily Luedke, to assist with data processing and analysis. 
+						The insights, assistance, and knowledge they have afforded me in processing and making sense of these data are invaluable. 
+						Katie has provided extensive assistance with data processing via Python scripts; the two of us also worked together to troubleshoot segmentation criteria. 
+						Emily performed the bulk of the annotation in the corpus over the summer of 2022: a heroic feat. 
+						This research is funded by NSF-DDRI No. 2024000; though any opinions, findings, conclusions, or errors in this project are my own and do not necessarily reflect views of the NSF. 						 
+					</p>
+				</div>
+
+				
+			</article>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
