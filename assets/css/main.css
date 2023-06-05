@@ -100,7 +100,7 @@ input, select, textarea {
 	body, input, textarea, select {
 		font-family: 'Open Sans', sans-serif;
 		line-height: 1.85em;
-		color: #888;
+		color: #000000;
 		font-weight: 300;
 		font-size: 13pt;
 	}
@@ -110,12 +110,12 @@ input, select, textarea {
 		-webkit-transition: color .2s ease-in-out;
 		-ms-transition: color .2s ease-in-out;
 		transition: color .2s ease-in-out;
-		color: #74a57f;
+		color: #077187;
 		text-decoration: underline;
 	}
 
 		a:hover {
-			color: #9ece9a !important;
+			color: #74a57f !important;
 		}
 
 		a img {
