@@ -1,0 +1,63 @@
+
+library(stringr)
+library(tm)
+
+### here is some input ### 
+
+input <- "Here is some new text that I've created to test my script!"
+
+### removing punctuation from the input ### 
+
+nopunct <- removePunctuation(input,
+                  preserve_intra_word_contractions = FALSE,
+                  preserve_intra_word_dashes = FALSE,
+                  ucp = FALSE)
+
+### split input up into a list of individual strings (words) ###
+
+
+wordlist <- str_split(nopunct, " ")
+
+### turn the input into a dataframe ### 
+
+dataframe <- data.frame(t(sapply(wordlist, c)))
+
+### calculate the length of each item in the dataframe ### 
+
+dfl = str_split(dataframe, " ")
+
+lengthList <-sapply(dfl, nchar)
+
+### create a table showing the frequency of each of the counts #### 
+
+letterCount <- table(lengthList)
+
+### order it by decreasing quantity, just for fun ### 
+
+letterCountOrdered <- letterCount[order(letterCount, decreasing=FALSE)]
+
+### turn the table into a dataframe ### 
+
+frequency <- as.data.frame(letterCountOrdered)
+
+## print a line for each column of the table 
+
+for (i in 1:nrow(frequency)) {
+  cat("There are", frequency$Freq[i], "words with", paste(frequency$lengthList[i]), "letters")
+  cat("\n")
+}
+
+### clean up our environment for the future ### 
+
+rm(frequency)
+rm(wordlist)
+rm(lengthCol)
+rm(i)
+rm(input)
+rm(lengthList)
+rm(letterCount)
+rm(letterCountOrdered)
+rm(nopunct)
+
+
+
