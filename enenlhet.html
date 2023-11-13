@@ -39,14 +39,16 @@
 		<!-- Enenlhet -->
 			<article id="enenlhet" class="wrapper style5">
 				<div class="sidebar">
+					<a href="./files/Wheeler_PE_CILLAX.pdf"> El uso del alineamiento forzado en el estudio fonético del enenlhet (CILLA X) </a> 
 					<a href="./files/Wheeler_2023_ICPhS_Vowel Duration in Enenlhet.pdf"> Vowel Duration in Enenlhet (ICPhS 2023)</a>
 					<a href="./files/Wheeler_ICPhS Poster.pdf"> Vowel Duration in Enenlhet (ICPhS 2023 poster)</a>
 					<a href="./files/IntervalDuration_Enenlhet.praat">Vowel duration (Praat script)</a>
 					<a href="./files/IntervalFormants_HNR_Enenlhet.praat">HNR and formants (Praat script)</a>
+					<a href="./files/Final glottalization script_vowels in thirds.praat"> Voice quality (Praat script)</a>
 					<a href="./files/Zero crossing script_mod.praat">Move Textgrid intervals to zero crossings (Praat script)</a>
 					<a href="./files/enxet_cognates_script.py">Parse through .txt file for specific characters (Python script)</a>
 					<a href="./files/Script To Count Letters In Words">Count letters in words in input text (R script)</a>
-					<a href="./files/Final glottalization script_vowels in thirds.praat"> Voice quality measurements (Praat script)</a>
+					
 				</div>
 
 				<div class="content">
@@ -73,17 +75,19 @@
 					</p>
 
 					<div class="scroll-container">
-						<img src="./images/syllableViolin.png" alt="violin plot showing the duration difference in ms between open and closed syllables, divided by utterance position. " width= "300"> 
+						<img src="./images/Nasal F1 Effects.png" alt="violin plots showing the effects of preceding and following nasal vs. oral consonants on F1 in Enenlhet." width= "300"> 
 					<img src="./images/glides_correction.png" alt="Spectrogram, waveform, and textgrid showing forced alignment of an utterance" width= "300"> 
 					 <img src="./images/UF lengthening.png" alt="Violin plot showing utterance final vs utterance medial vowel duration in ms" width="300"> 
-					  <img src="./images/Mean_By_Speaker_20230523.png" alt="scatter plot showing the mean formant values at vowel midpoint in the corpus with all speakers on the same plot" width= "300"> 
+					  <img src="./images/BarkVowelQuality.png" alt="scatter plot showing bark-normalized F1 and F2 values for the Enenlhet corpus, with ellipses around each vowel quality" width= "300"> 
 
 					</div>
 					<p>
 						The second study of Enenlhet vowels examines vowel quality, as the language has a cross-linguistically unusual vowel inventory of just three vowels: /a, e, o/. 
-						A Linear Mixed Effects analysis run in R will examine the effect of preceding and following consonant place of articulation, as well as syllable structure and vowel duration. 
-						Preliminary results suggest three vowel categories, with more variation in the F2 dimension than the F1 dimension.
-						There is a high degree of variability overall.  
+						A Linear Mixed Effects analysis run in R examined the effect of preceding and following consonant place of articulation, as well as syllable structure and vowel duration. 
+						Results suggested three vowel categories, with more variation in the F2 dimension than the F1 dimension; these results are congruent to previous qualitative descriptions of Enenlhet and its sister languages. 
+						The F1 values for non-low vowels (/e, o/) are roughly similar to the F1 values reported for mid vowels in languages with five-vowel (/a, e, i, o, u/) inventories, suggesting that the IPA labels /e, o/ are appropriate. 
+						Vowels are raised adjacent to /j/ and lowered before nasals and uvular /q/. F2 is lowered adjacent to labial sounds and raised adjacent to palatals. 
+						There is a high degree of variability overall, both between speakers and in how each vowel quality interacts with the adajcent consonants.  
 					</p>
 
 					<p>
@@ -98,6 +102,7 @@
 						The insights, assistance, and knowledge they have afforded me in processing and making sense of these data are invaluable. 
 						Katie has provided extensive assistance with data processing via Python scripts; the two of us also worked together to troubleshoot segmentation criteria. 
 						Emily performed the bulk of the annotation in the corpus over the summer of 2022: a heroic feat. 
+						I also worked with Ishan Shah, who provided critical assistance with scripts for processing the data. 
 						This research is funded by NSF-DDRI No. 2024000; though any opinions, findings, conclusions, or errors in this project are my own and do not necessarily reflect views of the NSF. 						 
 					</p>
 				</div>
